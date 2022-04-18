@@ -176,10 +176,41 @@ body{
     display: block;
 }
 
+.navbar li a{
+    text-decoration: none;
+}
+
+.navbar li a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+ .navbar li a:hover::after{
+     transform: scale(1);
+ }
+
+ 
+ .navbar li a:hover{
+    color: black;
+}
+
 .logo img{
     height: 200px;
     width: 200px;
     transition: all 500ms;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
 }
 
 .banner{
@@ -236,6 +267,7 @@ body{
     border: none;
 }
 
+
 @media (max-width:412px){
 
     .grid-container{
@@ -268,8 +300,10 @@ body{
         grid-area: header;
     }
 
-    .navbar ul li a {
+    .navbar ul ul li a {
         font-size: 1.5rem;
+        position: relative;
+        text-decoration: none;
     }
 
     .banner h1{
