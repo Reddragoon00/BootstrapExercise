@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
 </head>
 <header class="header">
     <nav class="navbar">
@@ -39,8 +40,8 @@
     <h2>¡El mejor sitio para comenzar tu colección de figuras!
     </h2>
     <div class = "main-content">
-        <img src="assets/img/luffy.png" alt="Luffy">
-        <div  class = "inside-image">
+        <img src="assets/img/luffy.png" alt="Luffy" data-aos="fade-left">
+        <div  class = "imageContainer__info">
             <h3>Luffy, el Rey de los Piratas</h3>
             <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquam eligendi reprehenderit beatae hic autem aperiam aliquid facere a assumenda? Placeat officia soluta saepe, eos error magnam facere eveniet quo?
@@ -48,7 +49,7 @@
         </div>
     </div>
     <div class = "main-content">
-        <img src="assets/img/franky.png" alt="Franky" class = "inside-image">
+        <img src="assets/img/franky.png" alt="Franky" class = "inside-img" data-aos="fade-left">
         <div class = "imageContainer__info">
             <h3>Franky, el Cyborg</h3>
             <p>
@@ -57,7 +58,7 @@
         </div>
     </div>
     <div class = "main-content">
-        <img src="assets/img/brook.png" alt="Brook" class = "inside-image">
+        <img src="assets/img/brook.png" alt="Brook" class = "inside-img" data-aos="fade-left">
         <div class = "imageContainer__info">
             <h3>Brook, el tarareador</h3>
             <p>
@@ -66,6 +67,14 @@
         </div>
     </div>
 </main>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
+<script>
+  AOS.init({
+      duration: 2000,
+      once: true,
+  });
+</script>
 </body>
 <footer>
     <nav class = "navbar">

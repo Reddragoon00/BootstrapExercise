@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../aos.css">
+
 </head>
     <header class = "header">
                     
@@ -28,7 +30,7 @@
         <!-- Contenedor de productos -->
 
         <div class = "main-content">
-            <img src="../assets/img/luffy.png" alt="Luffy">
+            <img src="../assets/img/luffy.png" alt="Luffy" data-aos="fade-down">
             <div class = "imageContainer__info">
                 <h3>Luffy, el Rey de los Piratas</h3>
                 <p>
@@ -38,7 +40,7 @@
         </div>
 
         <div class = "main-content">
-            <img src="../assets/img/franky.png" alt="Franky">
+            <img src="../assets/img/franky.png" alt="Franky" data-aos="fade-down">
             <div class = "imageContainer__info">
                 <h3>Franky, el cyborg</h3>
                 <p>
@@ -48,7 +50,7 @@
         </div>
         
         <div class = "main-content">
-            <img src="../assets/img/brook.png" alt="Brook">
+            <img src="../assets/img/brook.png" alt="Brook" data-aos="fade-down">
             <div class = "imageContainer__info">
                 <h3>Brook, el tarareador</h3>
                 <p>
@@ -58,7 +60,7 @@
         </div>
         
         <div class = "main-content">
-            <img src="../assets/img/zoro.png" alt="Zoro">
+            <img src="../assets/img/zoro.png" alt="Zoro" data-aos="fade-down">
             <div class = "imageContainer__info">
                 <h3>Zoro, el Cazador de Piratas</h3>
                 <p>
@@ -68,7 +70,7 @@
         </div>
        
         <div class = "main-content">
-            <img src="../assets/img/sanji.png" alt="Sanji">
+            <img src="../assets/img/sanji.png" alt="Sanji" data-aos="fade-down">
                 <div class = "imageContainer__info">
                     <h3>Sanji, el cocinero</h3>
                     <p>
@@ -78,6 +80,14 @@
         </div>
                
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+    <script>
+      AOS.init({
+          duration: 2000,
+          once: true,
+      });
+    </script>
 </body>
 
 
