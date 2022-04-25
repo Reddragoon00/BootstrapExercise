@@ -49,6 +49,10 @@
     background-color: #FFFFFF;
 }
 
+.card {
+    margin-block: 100px;
+}
+
 .main-content h3{
     margin: 50px;
     text-align: center;
@@ -275,6 +279,117 @@ body{
 
 @media (max-width:412px){
 
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .navbar ul li{
+        display: block;
+    }
+
+    .navbar li{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    .header{
+        grid-area: header;
+    }
+
+    .navbar ul ul li a {
+        font-size: 1.5rem;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .banner h1{
+        font-size: 1.8rem;
+        text-align: center;
+        text-overflow: clip;
+    }
+
+    .main-content{
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            text-align: center;
+            padding: 15px;
+            margin: 20px;
+            border: solid var(--color1);
+            border-radius: 20px;
+            border-width: 5px;
+            background-color: var(--color2);
+            margin-block: 15px;
+    }
+
+    .info-content{
+        grid-area: main;
+        grid-column: 1 / 1;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 15px;
+        margin: 20px;
+        border: solid var(--color3);
+        border-radius: 20px;
+        border-width: 5px;
+        background-color: var(--color4);
+        margin-block: 15px;
+    }
+
+    .info-content img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .main-content h2{
+        font-size: 20px;
+    }
+
+    .main-content h3{
+        font-size: 16px;
+    }
+        
+    .main-content img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    
+    .main-content iframe{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .imageContainer__info h3{
+        color: var(--color1);
+        font-family: monospace;
+        font-size: 15px;
+    }
+
+    .imageContainer__info p{        
+        font-size: 10px;
+    }
+}
+
+@media (max-width:835px){
     .grid-container{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
