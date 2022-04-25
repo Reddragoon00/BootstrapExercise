@@ -259,6 +259,10 @@ body{
     border-radius: 4px;
 }
 
+.formulario legend {
+    font-weight: bold;
+}
+
 .form-imput{
     padding: 10px;
     margin: 10px 10px 5px 5px;
@@ -379,5 +383,4 @@ body{
     .imageContainer__info p{        
         font-size: 10px;
     }
-
 }
